@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
-const highStyle = {
-  color: 'red'
-}
-
-const lowStyle = {
-  color: 'blue'
-}
+import './DailyForecast.css'
 
 export class DailyForecast extends Component {
 
@@ -17,8 +10,8 @@ export class DailyForecast extends Component {
     return (
       <div>
         <div>{day}</div>
-        <div style={highStyle}>{high}</div>
-        <div style={lowStyle}>{low}</div>
+        <div className="high">{high}</div>
+        <div className="low">{low}</div>
       </div>
     )
   }
