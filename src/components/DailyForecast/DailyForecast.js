@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 const highStyle = {
   color: 'red'
@@ -11,12 +12,6 @@ const lowStyle = {
 export class DailyForecast extends Component {
 
   render() {
-    if (!this.props.forecast) {
-      return (
-        <React.Fragment></React.Fragment>
-      )
-    }
-
     const { day, high, low } = this.props.forecast
 
     return (
@@ -27,6 +22,10 @@ export class DailyForecast extends Component {
       </div>
     )
   }
+}
+
+DailyForecast.propTypes = {
+  forecast: PropTypes.object.isRequired
 }
 
 export default DailyForecast
