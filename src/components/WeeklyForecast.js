@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import DailyForecast from './DailyForecast'
 
 export class WeeklyForecast extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      this.props.forecasts.map(forecast => (
+        <DailyForecast forecast={forecast}></DailyForecast>
+      ))
     )
   }
 }
