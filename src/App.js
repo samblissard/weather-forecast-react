@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WeeklyForecast from './components/WeeklyForecast'
+import WeeklyForecast from './components/WeeklyForecast/WeeklyForecast'
 
 class App extends Component {
   state = {
