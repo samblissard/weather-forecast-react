@@ -5,7 +5,7 @@ export class WeeklyForecast extends Component {
   render() {
     return (
       this.props.forecasts.map(forecast => (
-        <DailyForecast forecast={forecast}></DailyForecast>
+        <DailyForecast key={forecast.day} forecast={forecast}></DailyForecast>
       ))
     )
   }
