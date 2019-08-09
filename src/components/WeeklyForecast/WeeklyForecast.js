@@ -6,13 +6,16 @@ import Grid from '@material-ui/core/Grid'
 export class WeeklyForecast extends Component {
   render() {
     return (
-      <Grid container spacing={2}>
-        {this.props.forecasts.map(forecast => (
-          <Grid item xs={1}>
-            <DailyForecast key={forecast.day} forecast={forecast}></DailyForecast>
-          </Grid>
-        ))}
-      </Grid>
+      <div>
+        <h1>Weather this week</h1>
+        <Grid container spacing={2}>
+          {this.props.forecasts.map(forecast => (
+            <Grid item xs={1}>
+              <DailyForecast key={forecast.day} forecast={forecast}></DailyForecast>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
         
     )
   }

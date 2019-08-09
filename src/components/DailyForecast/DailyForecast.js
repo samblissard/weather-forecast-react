@@ -45,8 +45,6 @@ export class DailyForecast extends Component {
       </Card>
     )
   }
-
-  
 }
 
 DailyForecast.propTypes = {

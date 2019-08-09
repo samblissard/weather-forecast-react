@@ -26,7 +26,7 @@ class App extends Component {
         day: 'Wed',
         high: 80,
         low: 60,
-        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png'
       },
       {
         day: 'Thu',
@@ -38,7 +38,7 @@ class App extends Component {
         day: 'Fri',
         high: 80,
         low: 60,
-        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png'
       },
       {
         day: 'Sat',
@@ -55,7 +55,6 @@ class App extends Component {
         <header className="App-header">
         </header>
         <WeeklyForecast forecasts={this.state.forecasts}></WeeklyForecast>
-        
       </div>
     );
   }

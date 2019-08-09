@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class WeatherSummary extends Component {
-    render() {
-			return (
-				<div>
-					<img src={this.props.weatherSummaryImage} alt='fakeText'/>
-				</div>
-			)
-    }
+function WeatherSummary(props) {
+	if (!props.weatherSummaryImage) {
+		return null
+	}
+
+	return (
+		<div>
+			<img src={props.weatherSummaryImage} alt='fakeText'/>
+		</div>
+	)
 }
 
 export default WeatherSummary
