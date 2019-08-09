@@ -5,39 +5,46 @@ class App extends Component {
   state = {
     forecasts: [
       {
-        day: 'Sunday',
+        day: 'Sun',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
       },
       {
-        day: 'Monday',
+        day: 'Mon',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png'
       },
       {
-        day: 'Tuesday',
+        day: 'Tue',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png'
       },
       {
-        day: 'Wednesday',
+        day: 'Wed',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
       },
       {
-        day: 'Thursday',
+        day: 'Thu',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
       },
       {
-        day: 'Friday',
+        day: 'Fri',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
       },
       {
-        day: 'Saturday',
+        day: 'Sat',
         high: 80,
-        low: 60
+        low: 60,
+        weatherSummaryImage: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png'
       }
     ]
   }
